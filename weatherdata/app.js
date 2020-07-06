@@ -14,11 +14,15 @@ app.get("/",function(req,res){
        const weatherdata = JSON.stringify(datas);
        const temp = datas.main.temp;
        const wdesc = datas.weather[0].description;
+       const icon = datas.weather[0].icon;
+       const imgurl = "http://openweathermap.org/img/wn/"+ icon + "@2x.png";
        console.log(weatherdata);
        console.log(temp);
        console.log(wdesc);
        res.write("<h1>The temperature is "+ temp+ "Kelvin </h1>");
        res.write("<h1>The weather is "+ wdesc);
+       res.write("<img src=" + imgurl + ">");
+
     })
     }) 
 })
