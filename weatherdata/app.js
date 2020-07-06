@@ -17,7 +17,8 @@ app.get("/",function(req,res){
        console.log(weatherdata);
        console.log(temp);
        console.log(wdesc);
-       res.send("<h1>The temperature is "+ temp+ "Kelvin "+ "and weather is "+ wdesc);
+       res.write("<h1>The temperature is "+ temp+ "Kelvin </h1>");
+       res.write("<h1>The weather is "+ wdesc);
     })
     }) 
 })
