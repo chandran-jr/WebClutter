@@ -11,7 +11,7 @@ app.get("/",function(req,res){
         console.log(response.statusCode);
     response.on("data",function (data){
        const datas = JSON.parse(data);
-       const weatherdata = JSO.stringify(datas);
+       const weatherdata = JS.stringify(datas);
        const temp = datas.main.temp;
        const wdesc = datas.weather[0].description;
        const icon = datas.weather[0].icon;
