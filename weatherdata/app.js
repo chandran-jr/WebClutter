@@ -35,5 +35,5 @@ app.get("/",function(req,res){
 
 
 app.listen(3000, function(){
-    console.l("server is running");
+    console.log("server is running");
 })
