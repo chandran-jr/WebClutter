@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <link rel="stylesheet" href="strylesign.css">
+    <title>Newsletter signup</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <form class="form-signin">
+  <img class="mb-4" width="150px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAjVBMVEX///8AAADw8PDg4OD7+/vW1ta2trb39/ezs7P5+fmwsLDm5ubNzc3j4+P09PTf39/q6up2dnakpKRUVFSTk5PCwsJqampdXV19fX1xcXEhISGenp4zMzOnp6eMjIzFxcVLS0uPj484ODhlZWVEREQZGRkqKioPDw9HR0cnJyeEhIQXFxc+Pj40NDQLCwslidPdAAALgElEQVR4nO1diXbiOgwlQNh3wr6FtYUy/P/nvXiRLS+8TjulcYvuOTOHqI6JL7Yky7JTKBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQHg2dLJ/9bwf4qeg2FrU+IfNJPsvHvPPvUovx0cKHfXN5RpFe/65EjHG4kjwlkTzWY2o86DeGEYMgqdFFM0KjLZoyK8T9qfdopnjA4aI1jgSEH2NsSRpk7ytxZ8PDVJ3Co2TJA33rX5B0BZNuKwPRbbFHJ80HJQHkcKOSzhrmjbZA4eq1JSIK1TeNGtnPgIXkpwC0MYZLBSWuuC6mucj54/4GiFwW9mQF5fsc0t+TtgfirhoI9fHzhlTzETUYqJR5KFNsNTChQ9Pa1XjF4M1Tk2sB2IBE8UpbRjlB7k+fG7YGiQIBYYGokmbGMAz447hE2q4+tCgQBjR8kkLmD7b6MsTv+tk3hTn2YI80D6aBIjehKlktI3QNXdDutZdtVwb8e1oWc2PKkyaYIlNm9BlA/M2YWOfBSOr8XwmZXG5cMqVWKHUunOaa0O+FRWbtSOTdkzZwil4ZqV69r3jXJvyjXBYE+6FZSMGbknes1b2zbNcG/NtcPSa8D0alpDRVvPRu7SEzzFObWOYoZyJm7ZwVXCp5IM5tkvy8fzLUXQaLayoreq9tPEZlzUlUzX8alydNl+Z2NV3jDZHj3Fr6mG+nW+jHg63p3BXv+qK2RTVpY3HMRNHPC/n26wHw+1UwoHwsMlos53bDKNMXL5Ty2+FZ3jx8eXYg/u0cefNI//N6m3oNpd3k8kd2hYeOePH092iTr5NeyBa6XA4TNPXw+F6ve52y9N5fmOdzXUpJG2uEsvAavLwOcm3bTmgXC7X69VOp1PM0MvQbDbbrPf04lartdmMRqNKpVJrNBqr1WrBjGl1sUiS7fpymU77/dlsPN7v027ezSAQCAQCgUD4MahEb8f5/Hx+s2Y6xcl41p9Opxt5XUuSRYbBYLVqNGqVSuaXbTIHrRUzsEl5r9tuN5u93mdzZHqtymoxqLR+xsq9CsbeTHlbiiGc6JtLKTCq1CQAVdLjv8n8PMez9u5knP0i2U+CIiCt8VxVNu+3HtPUr4SOKprxVpu2/Xu0qQgw8vz1KhaqGfhNlaQ2t+q7jh7U2i8DCsYaE2ugDbI23u1tBcgOQYlFiVnCrGklr3tOkDhDP/BgHKLNWBb5EG2ccEj26OtKdPREjzsVCZHRXV8AKsMp7MxVHPovIfnHaQMtudSV3FQJrQEgdCISRLzhPI5d0P0Nx7BxHAdUFQwlT9jNok0tIqsB2dYl9MIohCsv4vL+zxF08NcI/SMTdo+2PY/+rEX0hwV/JpNhKrKvlnYtKJx+VhXvjVI6PyldbOJWZY1WVEM2qAZtOy2HsQQKfmhde3CRRdSAXKOqlb0ByyF0F5D4pvK3Wn/glj9f1cYHwAzxa5/3E7SBu6HGOjeRL0LBAS1to5Ba/cLbZZSvE/CSoEnbm5LbtKXWtQfAwQsI+FW6N+5rGPVAksTaqOgspQFndAFtQ+tJoUGQxJda1z4cZBlpkYV6vAj3VloA5aaIORR00I1RD+jEgJcagDboXZBbC7TBsE2tax8Ss4xofU1o/YMsIycE0kuBGYOZmQpOyUshWMCDF2WbwVm1aTtY1z7APbJnifXnktRmwg0D51aOSjBIVgZ5g2E1CDi9BmjrFcwRBp4BzA6v1rUPMAGQBvkg6RJCod9h/EnnQk1aQ3Y2fICB1QNlLRWKTdtOXq96zV5RoMNQraJZEPiufKTX+ccUxrfoppABIW/Qq63D4GfvBoC2zLX/g3946Ac2bR6sVGVKUbILQckaqNryEjLbfg93oGpu49rPiLUxbDVtUjWJIWbbOCcf0kebMbVoAO1iYPK8I1D2yo1Zm1UtL6OfkeAAz82eVjohfDjZtFmbMjCQKyclKCOpDWQeca1q2tpxqztsf8BaPcyIGG2ys7wwo2fpbuWCeoBcOemVzdln0T8LylIU9bdd9R3eXJJTEvr2U0wbKGzm89q02QFYBOSTQPCoCP2IGxhhUlm/XeovAMT+4R/4vl0wbdz4gerpuLTZG4f8tEHwaATdiBMkNn8v9PTL9G5X/rqD3mQEtAk3Qnpxfd1voIWwYbnPYkbTfp8lDYnAUYpnRrJTbsGq8r8Jp3as/WH7IUbeaF7A3q46BkDGUmU8tuTQBoHad9S1HPNDUHN8qImOd1LejicA2al44pUB+8BAm7yUbE1UpAJoi6zrOxip6rgNEbNKaS47MLH1T9DK8cJajDl4ywWBmWqngHRrW9DboHdF1vUdgEPR7eB+JbR+DJOv+9q+urlgTydcT8SmTaqfa8V68r9tiZzyV8TAHOAvacR/1Ym6YNxDPpQAjo5RAqmdXz9Jm1RfF2EGpHYS5mEt4x3vqnq1BhjujjaHNmvd8qO0yd6aCp1ZxcKh/C6tHtv9y3q9TRJ7Gu+E14MDBO61xNymIeNIalH4PdpkwRv3RGARpYhkKPBuLSxogIYc/mPjHgeXNnOaaNNW8lejgV0wtUAf+YT6q96sOuDbwu1t4C4hkbGBQK4e2SkI94HXdJRKx4k3eETePLIMJSkOd9eppM1I08KTHUlTXTW6y1Bqs2S2Zq/HQ5YdfLgH3nuqRjTe44EjQ2A0X0yfBFgOd57gow1vTpORw3r0fzDcfnQujUrjQIeDpLis2hU9R250HczU+xohN0jazEUitIFU0ubZBYlgOAr6mBkdH0KHDCzufNOwwklqj9SpbzhJIDRIDX40hPaBO+/R1sc3683yaNFYlzVNsTfcBgj4gBovbUiFS9o8Udh7tGnHD8091UT9XDCx9lbIcSmEC0nb3JTqQfVXtJkWT80qkWra+osWvLt5BcKdImSASZQlVvPCT9CmiEAytSBqpi0weHdSwkpXqCjFMdvJaIe2OiybfpEkcDRitS/z2SYTsb30et0tl6fzeT4/Hq3hBBSlSKYyBD0HkXXdIwyiZ9wy2Wy226Vu1zireMP2l9Ya/lBbbB7yFk0DNgZhoV1bz7KOPBlvK+F6awQCgUAgEL4HI7FnlIfYRIRN7BitdjrVer0c9A6fHDF2PXgemVDRyNvL8Tg/n5bL3Y7FsIvXNM3cr8l+L3aNXi7r9YWRW0rEJt5Vg2/jFft4c27c4+CLT/KVkb4rZ/E15/jOSIYyXj1/+FmJpx+Cc3Cs7G6erXmvBT9trLO5p1sGHuP4V8zc9t45yC4teGnjCzGe3N+XX60Yy56MwI1XnhZ8tPHcBefEyijo4O1XoOS2mMdoN7aUdUKXNjYz9x3eFu6y1BfBc8wizwW3jx3w0sbDjZ4QbtC7bL8GngAsW+20Q77MAbFp45urPOf2Bpy79nVwzQLfkDFyZfaJAXx52s1qnv+M7Qf/Cje5lvtc5jBltLXNUnwwb93OFnYe+NfB4e3GkqTLxqthmLoy7QfPffEM0ed5t5+Tksx1urE8zNxXgyN+IrHrqNyehzWPfuPLKTg9yaGt5L3v/CwjVMCxp7zTIPWm30WHeLVfBBANf/XkwAPbfxOpLdpMonfRMfAdMI6v3P+/b/id6B49FOg5PYt0aNr4RL1uvk4s8C1BD4OlqMy3qhnvokt5eWuDxu7nbLT9Wlgeboxl+KVqIrfNCsqFndfxUJRNKrhZWDm0nbjeN48RPzz3cnuMR57gJ1G0ibDI0TiajOMW7paW78IITTJfuWQNY5DTJmacRmBp8WxuhxcjHa0VpyxcJG1Mz505aygMfluEffbfNyJWa1oiKfCiXuF34qxpT+Twm9/C8XF0VnI7n8gK3EraDnw4AmvH9XMbAi96jYnmLWEmoSb2SQnWXpNfvl7weZTjwfgsZkzMlxW7ZjbRcZJsniMU+Q+wM3JjMgEEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIDwR/gNFR43VPc7n/gAAAABJRU5ErkJggg==" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Sign Up!</h1>
+  <label for="inputEmail" class="sr-only">First Name</label>
+  <input type="text"  class="form-control top" placeholder="First Name" required autofocus>
+  <label for="inputPassword" class="sr-only">Last Name</label>
+  <input type="text" class="form-control middle" placeholder="Last Name" required>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" class="form-control bottom" placeholder="Email address" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-5 mb-3 text-muted">&copy;2020</p>
+</form>
+</body>
+</html>
