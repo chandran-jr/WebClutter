@@ -28,10 +28,10 @@ app.post("/",function (req, res){
         ]
     }
     const jsondata= JSON.stringify(data);
-    const url = "https://us10.api.mailchimp.com/3.0/lists/226f501baa";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/(apikey)";
     const options = {
         method: "POST",
-        auth: "govind:efbb0b4d2b557b00758655a8be6e53df-us10",
+        auth: "govind:(listkey)",
     }
     const request= https.request(url,options,function(response){
       response.on("data",function(data){
@@ -70,6 +70,3 @@ app.get("/", function(req,res){
 app.listen(3000,function(){
     console.log("Server is up");
 });
-
-//efbb0b4d2b557b00758655a8be6e53df-us10
-//226f501baa
