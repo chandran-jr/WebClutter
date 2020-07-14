@@ -1,4 +1,4 @@
-//jshint esversion:6
+//jshint esversion:
 
 const express = require("express");
 const app = express();
