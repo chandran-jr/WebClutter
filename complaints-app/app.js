@@ -32,10 +32,10 @@ app.post("/",function (req, res){
         ]
     }
     const jsondata= JSON.stringify(data);
-    const url = "https://us10.api.mailchimp.com/3.0/lists/226f501baa";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/apikey";
     const options = {
         method: "POST",
-        auth: "govind:de05380f9f308dbfbb478658ed8c4170-us10",
+        auth: "govind:List key",
     }
     const request= https.request(url,options,function(response){
         if(response.statusCode===200){
