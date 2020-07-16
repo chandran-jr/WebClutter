@@ -4,8 +4,15 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
+var item= "";
 
 app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.post("/", function (req,res){
+     item = req.body.newitem;
+    res.redirect("/");
+})
 
 
 app.get("/", function (req, res){
@@ -19,7 +26,7 @@ app.get("/", function (req, res){
 
     var day = today.toLocaleDateString("en-US", options);
 
-        res.render("index",{kindofday: day});
+        res.render("index",{kindofday: day, newlistitem: item});
 })
 
 app.listen("3000", function(){
