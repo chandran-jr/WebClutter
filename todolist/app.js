@@ -4,13 +4,14 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
-var item= "";
+var items= [];
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.post("/", function (req,res){
-     item = req.body.newitem;
+    var item = req.body.newitem;
+    items.push(item);
     res.redirect("/");
 })
 
@@ -26,9 +27,10 @@ app.get("/", function (req, res){
 
     var day = today.toLocaleDateString("en-US", options);
 
-        res.render("index",{kindofday: day, newlistitem: item});
+        res.render("index",{kindofday: day, newlistitems: items});
 })
 
 app.listen("3000", function(){
     console.log("Server running");
 });
+
