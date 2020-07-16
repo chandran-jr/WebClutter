@@ -1,35 +1,28 @@
-//jshint esversion:6
-
-const express = require("express");
-const app = express();
-const bodyParser = require("body-parser");
-const https = require("https");
-var items= [];
-
-app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({extended:true}));
-
-app.post("/", function (req,res){
-    var item = req.body.newitem;
-    items.push(item);
-    res.redirect("/");
-})
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+<body>
 
 
-app.get("/", function (req, res){
-    var today = new Date();
+    <h1> <%= kindofday %></h1>
+
+    <ul>
+        <li> Buy food</li>
+        <li>Eat food</li>
+
+      <%  for(var i=0; i<newlistitems.length; i++){ %>
+            <li> <%= newlistitems[i] %> </li>
+      <%  } %>
+ </ul>
+
+    <form class="" action="/" method="POST">
+    <input type="text" name = "newitem">
+    <button type="submit" name="button">Add</button>
     
-    var options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long"
-    };
-
-    var day = today.toLocaleDateString("en-US", options);
-
-        res.render("index",{kindofday: day, newlistitems: items});
-})
-
-app.listen("3000", function(){
-    console.log("Server running");
-});
+    </form>
+</body>
+</html>
