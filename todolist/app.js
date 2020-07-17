@@ -29,10 +29,9 @@ app.get("/", function (req, res){
 
     var day = today.toLocaleDateString("en-US", options);
 
-        res.render("index",{kindofday: day, newlistitems: items});
+        res.render("index",{listtitle: day, newlistitems: items});
 })
 
 app.listen("3000", function(){
     console.log("Server running");
 });
-
