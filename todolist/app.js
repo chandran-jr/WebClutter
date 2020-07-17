@@ -4,9 +4,10 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
-var items= [];
+var items= ["buy food", "eat food"];
 
 app.set('view engine', 'ejs');
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.post("/", function (req,res){
@@ -14,6 +15,7 @@ app.post("/", function (req,res){
     items.push(item);
     res.redirect("/");
 })
+
 
 
 app.get("/", function (req, res){
