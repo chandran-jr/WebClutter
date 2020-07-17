@@ -5,6 +5,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const https = require("https");
 var items= ["buy food", "eat food"];
+var workitems = [];
 
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
@@ -16,6 +17,15 @@ app.post("/", function (req,res){
     res.redirect("/");
 })
 
+app.get("/work",function (req, res){
+    res.render("index", {listtitle: "Work list", newlistitems: workitems});
+})
+
+app.post("/work" , function (req,res){
+    let item = req.body.newitem;
+    workitems.push(item);
+    res.redirect("/work");
+})
 
 
 app.get("/", function (req, res){
