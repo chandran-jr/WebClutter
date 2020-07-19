@@ -13,9 +13,15 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.post("/", function (req,res){
     var item = req.body.newitem;
-    items.push(item);
+    if(req.body.list === "Work"){
+        workitems.push(item);
+        res.redirect("/work");
+    }
+    else{
+        items.push(item);
     res.redirect("/");
-})
+}
+    })
 
 app.get("/work",function (req, res){
     res.render("index", {listtitle: "Work list", newlistitems: workitems});
