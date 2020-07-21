@@ -48,6 +48,10 @@ app.get("/", function (req, res){
         res.render("index",{listtitle: day, newlistitems: items});
 })
 
+app.get("/about",function(req,res){
+    res.render("about");
+})
+
 app.listen("3000", function(){
     console.log("Server running");
 });
