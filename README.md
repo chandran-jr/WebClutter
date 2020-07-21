@@ -1,4 +1,4 @@
-# udemy-full-stack-web-dev
-The major assignments i was given in the Full-Stack Web Dev in Udemy.
+# full-stack-web-dev
+Some Full-stack web dev programs.
 
-Tried out a few web apps.
+Tried out a few web apps,nvm
