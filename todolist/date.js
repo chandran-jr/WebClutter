@@ -1,7 +1,13 @@
-var today = new Date();
+//jshint esversion:6
+ 
+ 
+ 
+ var today = new Date();
     
-var options = {
-    weekday: "long",
-    day: "numeric",
-    month: "long"
-};
+    var options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+    };
+
+    var day = today.toLocaleDateString("en-US", options);
