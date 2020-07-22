@@ -1,7 +1,7 @@
-//jshint esversion:6
+ //jshint esversion:6
  
  
- 
+ function getdate() {
  var today = new Date();
     
     var options = {
@@ -11,3 +11,4 @@
     };
 
     var day = today.toLocaleDateString("en-US", options);
+ }
