@@ -1,4 +1,4 @@
- //jshint esversion:
+ //jshint esversion:6
  
  
  function getdate() {
