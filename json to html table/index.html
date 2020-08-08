@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR CRIME REPORT</title>
+
+    <style>
+        html {
+            background-color: whitesmoke;
+        }
+        #excelDataTable{
+            margin-top: 100px;
+            margin-left: 250px;
+            margin-right: 400px;
+            width: 70%;
+        }
+        td {
+             text-align: center;
+             color: darkblue;
+             font-size: 25px;
+             font-weight: bolder;
+             border: 3px solid black
+            }
+            th {
+             text-align: center;
+             font-size: 30px;
+             color: purple;
+             font-weight: bold;
+             border: 3px solid rgb(4, 82, 102);
+            }
+            .head{
+            margin-left: 600px;
+            margin-top: 100px;
+            padding-bottom: 0%;
+        }
+        h1{
+            color: rgb(109, 4, 86);
+            font-weight: bolder;
+            text-decoration: underline
+        }
+        </style>
+
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<body onLoad="buildHtmlTable('#excelDataTable')">
+
+    <div class="head">
+        <h1>CRIME DATA SHEET</h1>
+    </div>
+
+  <table id="excelDataTable">
+  </table>
+
+
+</body>
+
+<script>
+    // Change the myList to the output json
+    var myList = [
+  { "from date": "aug", "to date": "nov", "place": "tvm", "keyword":"alcoholic" },
+  { "from date":"nov","to date": "dec","place": "kollam" , "keyword":"alcoholic"},
+  { "from date": "feb", "to date": "march", "place": "calicut", "keyword":"alcoholic"}
+];
+
+// Builds the HTML Table out of myList.
+function buildHtmlTable(selector) {
+  var columns = addAllColumnHeaders(myList, selector);
+
+  for (var i = 0; i < myList.length; i++) {
+    var row$ = $('<tr/>');
+    for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+      var cellValue = myList[i][columns[colIndex]];
+      if (cellValue == null) cellValue = "";
+      row$.append($('<td/>').html(cellValue));
+    }
+    $(selector).append(row$);
+  }
+}
+
+// Adds a header row to the table and returns the set of columns.
+// Need to do union of keys from all records as some records may not contain
+// all records.
+function addAllColumnHeaders(myList, selector) {
+  var columnSet = [];
+  var headerTr$ = $('<tr/>');
+
+  for (var i = 0; i < myList.length; i++) {
+    var rowHash = myList[i];
+    for (var key in rowHash) {
+      if ($.inArray(key, columnSet) == -1) {
+        columnSet.push(key);
+        headerTr$.append($('<th/>').html(key));
+      }
+    }
+  }
+  $(selector).append(headerTr$);
+
+  return columnSet;
+}
+</script>
+</html>
