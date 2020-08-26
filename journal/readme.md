@@ -1,1 +1,1 @@
-A journal/diary website created ysing ejs templates
+A journal/diary website created using ejs templates
