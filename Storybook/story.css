@@ -1,0 +1,64 @@
+body{
+    background-image: linear-gradient(to bottom left, rgb(9, 137, 241), orange);
+}
+
+h1{
+    text-align: center;
+    color: rgb(51, 253, 10);
+    background-color:blue;
+    width: 40%;
+    margin: auto;
+    font-weight: bolder;
+}
+
+hr{
+    width: 40%;
+}
+h2{
+    text-align: center;
+    background-color: rgb(51, 253, 10);
+    color: royalblue;
+    font-weight:bold;
+    width: 40%;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    color: whitesmoke;
+    font-weight:bold;
+    margin: auto;
+}
+.quote{
+    text-align: center;
+    background-color:teal;
+    color:white;
+    font-weight: bold;
+}
+
+img{
+    margin-left: 45%;
+    padding: 10px;
+    size: 10%;
+}
+p{
+    background-color: purple;
+    color: white;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.rate{
+    text-align: center;
+}
+.video{
+    margin: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
