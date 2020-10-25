@@ -1,0 +1,186 @@
+
+
+@media screen and (max-width: 400px) {
+   .full-body {
+      background-color: lightcoral;
+      font-size: small;
+    }
+    #img2{
+        padding:30px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 40%;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .full-body {
+       background-color: lightgreen;
+       font-size: small;}
+       #img2{
+        padding:30px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 40%;
+        display: none;
+    }
+    #second-heading{
+        padding-bottom: 20px;
+        font-size: 30px;
+        text-decoration: underline;
+        color: orange;
+    }
+    
+    #third-heading{
+        padding-bottom: 20px;
+        font-size: 30px;
+        text-align: center;
+        color: chocolate;
+    }
+    
+
+    .navtag{
+        font-size: 30px;
+        color: darkblue;
+        text-decoration: solid;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .heading{
+        padding-bottom: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 40px;
+        text-align: center;
+        color: brown;
+        margin-top: 40px;
+    }
+    
+     }
+   @media screen and (min-width: 750px) {
+    .full-body {
+       background-color: aqua;
+       font-size: medium;
+     }
+     #second-heading{
+        padding-bottom: 20px;
+        font-size: 50px;
+        text-decoration: underline;
+        color: orange;
+    }
+    
+    #third-heading{
+        padding-bottom: 20px;
+        font-size: 50px;
+        text-align: center;
+        color: chocolate;
+    }
+    
+     .heading{
+        padding-bottom: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 60px;
+        text-align: center;
+        color: brown;
+    }
+    
+     #img2{
+        padding:30px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 40%;
+    }
+
+    .navtag{
+        font-size: 30px;
+        color: teal;
+        text-decoration: solid;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+   }
+nav{
+    height: 5px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0%;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+#paragraph{
+    font-size: 30px;
+    text-align: center;
+}
+
+#unordered{
+    font-size: 20px;
+    margin-left: 60px;
+    list-style-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cupcake_1f9c1.png);
+    font-size: 50px;
+}
+
+#ordered1{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#ordered2{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.spanclass{
+    font-style: italic;
+}
+#lastspan{
+    text-decoration: underline;
+}
+#firstspan{
+    color:red;
+    font-style: normal;
+
+}
+
+#recipe1{
+    color: lightcoral;
+}
+#recipe3{
+    color: lightcoral;
+}
+
+#recipe5{
+    color: lightcoral;
+}
+
+#fourth-heading{
+    font-size: 40px;
+    text-decoration: underline;
+    color: brown;
+}
+
+.navtag:hover{
+    color: blue;
+}
+#img1{
+    padding:30px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 40%;
+}
+#img1:hover{
+    transform: scale(1.5);
+    ;
+}
+
+#img2:hover{
+    transform: scale(1.5);
+    ;
+}
+
+/* https://www.w3schools.com/cssref/ */

@@ -1,0 +1,75 @@
+.full-body{
+    background-color: aqua;
+}
+
+.paragraph{
+    font-size: 30px;
+}
+
+.unordered{
+    font-size: 20px;
+    margin-left: 60px;
+    list-style-image: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cupcake_1f9c1.png);
+    font-size: 50px;
+}
+
+#ordered1{
+    font-size: 40px;
+    list-style: upper-roman;
+    margin-left: 30px;
+}
+
+#ordered2{
+    font-size: 40px;
+    list-style: upper-roman;
+    margin-left: 30px;
+}
+
+.spanclass{
+    font-style: italic;
+}
+#lastspan{
+    text-decoration: underline;
+}
+#firstspan{
+    color:red;
+    font-style: normal;
+
+}
+
+#recipe1{
+    color: lightcoral;
+}
+#recipe3{
+    color: lightcoral;
+}
+
+#recipe5{
+    color: lightcoral;
+}
+
+.heading{
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 60px;
+}
+
+.second-heading{
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.third-heading{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.fourth-heading{
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+/* https://www.w3schools.com/cssref/ */
