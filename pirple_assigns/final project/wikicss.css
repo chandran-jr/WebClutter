@@ -1,0 +1,472 @@
+
+#tags{
+    position: relative;
+}
+#wikiglobe{
+  position: absolute;
+    top: 30px;
+    margin-left: 42%;
+    margin-top: 220px;
+    transform: scale(1.5);
+}
+#wikiwrite{
+        text-align: center;
+}
+#globe{
+    height: 600px;
+}
+
+#eng{
+    margin-top: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 30%;
+}
+#english{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#english:hover{
+    text-decoration: underline;
+}
+#engpara{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#span{
+    margin-top: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 22%;
+}
+#spanish{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#spanish:hover{
+    text-decoration: underline;
+}
+#spantext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#niho{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+}
+#nihongo{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#nihongo:hover{
+    text-decoration: underline;
+}
+#nihotext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+
+#dut{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 32%;
+}
+#dutch{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#dutch:hover{
+    text-decoration: underline;
+}
+#dutext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#py{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 22.5%;
+}
+#pyccknn{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#pyccknn:hover{
+    text-decoration: underline;
+}
+#pytext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#france{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 37%;
+}
+#french{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#french:hover{
+    text-decoration: underline;
+}
+#frentext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#italy{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+}
+#italiano{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#italiano:hover{
+    text-decoration: underline;
+}
+#itext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#zhoe{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 32%;
+}
+#zhon{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#zhon:hover{
+    text-decoration: underline;
+}
+#zhtext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#port{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 32%;
+}
+#portugese{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#portugese:hover{
+    text-decoration: underline;
+}
+#portext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#pol{
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 22%;
+}
+#polski{
+    font-size: 1.6rem;
+    text-decoration: solid;
+    color: #36c;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+#polski:hover{
+    text-decoration: underline;
+}
+#polt{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+#searchbox{
+    margin-left: 36.5%;
+}
+input{
+    border-color: blue;
+    outline: solid blue 1px;
+    width: 40%;
+    height: 50px;
+    font-size: 1.6rem;
+    border: 1px solid #a2a9b1;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+#searchb{
+    color: blue;
+    background-color: #36c;
+    border-color: #36c;
+    display: inline-block;
+    border: 0px;
+    width: 6.5%;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRglq3KXHFslY8PgMTq_mm7nEDi3T3rl7UaG082PrndvecCM3SE&usqp=CAU);
+}
+
+#hor{
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: grey;
+}
+#readlang{
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 30px;
+
+}
+
+
+#readb{
+    color: #36c;
+    text-align: center;
+    margin-left: 30.5%;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+}
+
+#wikifound{
+    width: 475px;
+    height: 200px;
+    position: relative;
+    justify-content: start;
+}
+
+#wikifoundimg{
+    transform: scale(0.3);
+    padding: 0px;
+    margin-right: 0px;
+    display: inline-block;
+}
+#wikifoundtext{
+    float: right;
+    height: 30px;
+    width: 300px;
+    margin-top: 70px;
+    margin-right: 200px;
+    display: inline-block;
+    position: absolute;
+    left: 170px;
+}
+#wikifoundlink{
+    text-decoration: solid;
+    color: #36c
+}
+#wikifoundlink:hover{
+    text-decoration: underline;
+}
+
+#wikipedfavicon{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    justify-content: start;
+    margin-top: 0px;
+}
+
+#wikfav{
+    transform: scale(0.3);
+    padding: 0px;
+    margin-right: 0px;
+    display: inline-block;
+}
+
+#download{
+    float: right;
+    height: 30px;
+    width: 230px;
+    margin-top: 70px;
+    margin-right: 200px;
+    display: inline-block;
+    position: absolute;
+    left: 170px;
+    color: #36c;
+    font-weight: 700;
+    text-decoration: solid;
+}
+#download:hover{
+    text-decoration: underline;
+}
+#wikipedfavicon{
+    top: 0px;
+    justify-content: top;
+    width: 400px;
+}
+
+#savetext{
+    color: #54595d;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    float: right;
+    position: absolute;
+    top: 140px;
+    width: 230px;
+    left: 170px;
+}
+
+#playbuttons{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+#google{
+    position: absolute;
+    left: 100px;
+    padding-top: 20px;
+    transform: scale(0.5);
+}
+#apple{
+    position: absolute;
+    left: 100px;
+    transform: scale(0.5);
+    top: 60px;
+}
+
+#footer{
+    display: inline-block;
+    position: relative;
+}
+#table{
+      position: absolute;
+      left: 500px;
+      top: 0px;
+      margin-top: 10px;
+}
+#commons{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+}
+#commonspic{
+    transform: scale(0.3);
+}
+#commonblue{
+    color: #36c;
+    position: absolute;
+    top: 90px;
+    left: 160px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-decoration: solid;
+}
+#commontext{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    height: 10px;
+}
+
+#wikivoyage{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+}
+#voyagepic{
+    transform: scale(0.3);
+}
+#voyageblue{
+    color: #36c;
+    position: absolute;
+    top: 90px;
+    left: 160px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-decoration: solid;
+}
+#voyagetext{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    height: 10px;
+}
+
+#wikitionary{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+}
+#tionarypic{
+    transform: scale(0.3);
+}
+#tionaryblue{
+    color: #36c;
+    position: absolute;
+    top: 90px;
+    left: 160px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-decoration: solid;
+}
+#tionarytext{
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    height: 10px;
+}
+
+
+
