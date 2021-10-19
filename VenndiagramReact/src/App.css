@@ -1,0 +1,32 @@
+#venn{
+  display: grid;
+  place-items: center;
+}
+
+.boxVenn{
+  border: 1px solid black;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.inputTable{
+  display: grid;
+  place-items: center;
+}
+
+.input > h3 {
+  font-size: 15px;
+}
+
+.input > input {
+  padding: 8px;
+  outline: none;
+}
+
+.noneval {
+  display: grid;
+  place-items: center;
+  color: rgb(92, 236, 92);
+}
