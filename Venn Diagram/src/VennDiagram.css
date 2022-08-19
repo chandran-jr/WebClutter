@@ -1,0 +1,12 @@
+.VennDiagram {
+    border: 2px solid red;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.noneval {
+    display: grid;
+    place-items: center;
+    color: red;
+  }

@@ -1,0 +1,78 @@
+#dropVal {
+    padding: 10px;
+    outline: none;
+}
+
+.chart {
+    display: grid;
+    place-items: center;
+}
+
+.App{
+    display: flex;
+
+}
+
+.dragdrop {
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+
+.sidebar {
+    height: 725px;
+    width: 20%;
+    background-image: linear-gradient(#2B32B2,#1488CC);
+}
+
+.xbox {
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.ybox {
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sidebar > h2 {
+    color: white;
+    margin-top:90%;
+    display: grid;
+    place-items: center;
+}
+
+.drop {
+    background-image: linear-gradient(#20BDFF,#A5FECB);
+    width:fit-content;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.rest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.dropbar{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.dropandchart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.axisinputbox > h3 {
+    color: white;
+}

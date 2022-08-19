@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 140px;
+
+}
+
+.inputTable{
+  display: grid;
+  place-items: center;
+}
+
+.input > h3 {
+  font-size: 15px;
+}
+
+.input > input {
+  padding: 8px;
+  outline: none;
+}
