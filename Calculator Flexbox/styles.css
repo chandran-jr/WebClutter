@@ -1,0 +1,204 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: lavenderblush;
+}
+
+.calculator {
+    height: 600px;
+    width: 22.5%;
+    background-color: #333333;
+    display:grid;
+    place-items: center;
+}
+
+.screen {
+    background-color: black;
+    height: 70px;
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.buttons {
+	display:grid;
+	width:90%;
+	height:400px;
+    color: white;
+    margin-bottom: 30px;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	  grid-gap:3px;
+	  grid-template-areas: 
+	  "clear plusminus divide multiply"
+	  "seven eight nine minus"
+	  "four five six plus"
+	  "one two three equal"
+	  "zero zero dot equal";
+	}
+
+	#clear
+	{
+	  grid-area:clear;  
+      font-size: 50px;
+      border-radius: 10px;
+      background: linear-gradient(#BF000C, #680008);
+      font-size: 50px;
+      color: white;
+      cursor: pointer;
+	}
+
+    #plusminus{
+        grid-area:plusminus;
+        color: white;
+        background: linear-gradient(#8D8B8C, #403C3D);
+        font-size: 35px;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+
+	#divide
+	{
+	grid-area:divide;
+    color: white;
+    font-size: 50px;
+    border-radius: 10px;
+    background: linear-gradient(#8D8B8C, #403C3D);
+    cursor: pointer;
+	}
+
+	#multiply
+	{
+	grid-area:multiply;
+    color: white;
+    background: linear-gradient(#8D8B8C, #403C3D);
+    font-size: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+	}
+	#plus{
+	grid-area:plus;
+    color: white;
+    background: linear-gradient(#8D8B8C, #403C3D);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#minus{
+	grid-area:minus;
+    color: white;
+    background: linear-gradient(#8D8B8C, #403C3D);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#seven
+	{
+	grid-area:seven;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#eight
+	{
+	grid-area:eight;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#nine
+	{
+	grid-area:nine;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#four
+	{
+	grid-area:four;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#five
+	{
+	grid-area:five;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+    #six{
+        grid-area:six;
+        color: white;
+        background: linear-gradient(#2F2F2F, #030303);
+        font-size: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+	#three
+	{
+	grid-area:three;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#two
+	{
+	grid-area:two;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#one
+	{
+	grid-area:one;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#dot
+	{
+	grid-area:dot;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#zero{
+	grid-area:zero;
+    color: white;
+    background: linear-gradient(#2F2F2F, #030303);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
+	#equal{
+	grid-area:equal;
+    color: white;
+    background: linear-gradient(#8D8B8C, #403C3D);
+      font-size: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+	}
