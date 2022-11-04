@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    place-items: center;
+    background-color: #00BCC5;
+}
+
+
+.upper {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 164px;
+    
+}
+	#square
+	{
+        background-color: #EAE8E7;
+        border: 6px solid white;
+        height: 133.3px;
+        width: 127px;
+	}
+
+    #longsquare
+	{   height: 285.6px;
+        width: 200px;
+        background-color: #EAE8E7;
+        border: 6px solid white;
+	}
+
+    #widesquare
+	{   height: 133.3px;
+        width: 200px;
+        background-color: #EAE8E7;
+        border: 6px solid white;
+	}

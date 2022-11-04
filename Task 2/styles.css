@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E7E7;
+}
+
+.bigsquare {
+	display:grid;
+    color: white;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr;
+	  grid-gap:8px;
+}
+
+	#smallsquare
+	{
+	  width: 60px;
+    height: 60px;
+    border: 8px solid #A3A9B6;
+	}
