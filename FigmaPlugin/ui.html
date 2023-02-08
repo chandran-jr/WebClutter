@@ -1,0 +1,116 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/thomas-lowry/figma-plugin-ds/dist/figma-plugin-ds.css"
+/>
+
+<style>
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+
+  div {
+    margin: 1em;
+  }
+
+  body {
+    padding: 2em;
+  }
+</style>
+
+<div class="heading">
+  <h3>Social Media Card Plugin</h3>
+</div>
+
+<div>
+  <label for="username">Username</label>
+  <input
+    class="input__field"
+    type="text"
+    value=""
+    id="username"
+    placeholder="Your Username"
+  />
+
+  <label for="name">Name</label>
+  <input
+    class="input__field"
+    type="text"
+    value=""
+    id="name"
+    placeholder="Your Name"
+  />
+
+  <label for="description">Description</label>
+  <input
+    class="textarea"
+    type="textarea"
+    rows="3"
+    value=""
+    placeholder="The
+  caption goes here..."
+    id="description"
+  />
+</div>
+
+<div class="switch">
+  <input class="switch__toggle" type="checkbox" id="dark-mode-on" />
+  <label class="switch__label" for="dark-mode-on">Dark Mode</label>
+</div>
+
+<div class="radio">
+  <input
+    id="radioButton1"
+    type="radio"
+    class="radio__button"
+    value="1"
+    name="radioGroup"
+  />
+  <label for="radioButton1" class="radio__label">No Image</label>
+
+  <input
+    id="radioButton2"
+    type="radio"
+    class="radio__button"
+    value="2"
+    name="radioGroup"
+  />
+  <label for="radioButton2" class="radio__label">Single Image</label>
+
+  <input
+    id="radioButton3"
+    type="radio"
+    class="radio__button"
+    value="3"
+    name="radioGroup"
+  />
+  <label for="radioButton3" class="radio__label">Carousel</label>
+</div>
+
+<div>
+  <button id="submit-post" class="button button--primary">Submit</button>
+</div>
+
+<script>
+  document.getElementById("submit-post").onclick = () => {
+    const name = document.getElementById("name").value;
+    const username = document.getElementById("username").value;
+    const description = document.getElementById("description").value;
+    const darkMode = document.getElementById("dark-mode-on").checked;
+    const numImage = document.querySelector(
+      'input[name="radioGroup"]:checked'
+    ).value;
+
+    parent.postMessage(
+      { pluginMessage: { name, username, description, darkMode, numImage } },
+      "*"
+    );
+  };
+</script>

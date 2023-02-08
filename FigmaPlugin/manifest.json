@@ -1,0 +1,10 @@
+{
+  "name": "GovindFigmaPlugin",
+  "id": "1204670517773121819",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html"
+}
